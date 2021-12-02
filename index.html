@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Designers</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="stylesheet" href="/css/whyus.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/appointment.css">
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Animation links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Interior Designer</title>
+
+    <script>
+        function stickyMenu() {
+            var sticky = document.getElementById("sticky");
+            if (window.pageYOffset > 20) {
+                sticky.classList.add("sticky");
+                sticky.classList.remove("menu-ul");
+            }
+            else {
+                sticky.classList.remove("sticky");
+            }
+        }
+
+        window.onscroll = function () {
+            stickyMenu();
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="top-background" id="home">
+        <div class="menu" id="sticky">
+            <ul class="menu-ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#ourDesigns">Our Designs</a></li>
+                <li><a href="#whyus">Why Us</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+            </ul>
+        </div>
+
+        <div class="page-title">INTERIOR DESIGNS
+            <div class="description">Let us make your home HEAVEN</div>
+        </div>
+    </div>
+
+    <!-- Our design image size 1920 x 1200 -->
+    <div class="page-blocks" id="ourDesigns">
+        <div class="title" data-aos="fade-down">Our Designs</div>
+        <div class="designs">
+            <img class="zoom" src="/images/our_designs/image1.jpg" data-aos="fade-up">
+            <img class="zoom" src="/images/our_designs/image2.jpg" data-aos="fade-up">
+            <img class="zoom" src="/images/our_designs/image3.jpg" data-aos="fade-up">
+            <img class="zoom" src="/images/our_designs/image4.jpg" data-aos="fade-up">
+
+            <!-- <span id="more">
+            </span>
+            <span id="moreImages"> -->
+
+            <img class="zoom" src="/images/our_designs/image5.jpg" data-aos="fade-up">
+            <img class="zoom" src="/images/our_designs/image6.jpg" data-aos="fade-up">
+            <img class="zoom" src="/images/our_designs/image7.jpg" data-aos="fade-up">
+            <img class="zoom" src="/images/our_designs/image8.jpg" data-aos="fade-up">
+            <img class="zoom" src="/images/our_designs/image9.jpg" data-aos="fade-up">
+            <img class="zoom" src="/images/our_designs/image10.jpg" data-aos="fade-up">
+            <img class="zoom" src="/images/our_designs/image11.jpg" data-aos="fade-up">
+            <img class="zoom" src="/images/our_designs/image12.jpg" data-aos="fade-up">
+
+            <!-- </span> -->
+        </div>
+
+        <button onclick="loadMore()" id="loadMore" class="more-design-button">More Designs</button>
+    </div>
+
+    <!-- <script>
+        function loadMore() {
+
+            var moreImages = document.getElementById("moreImages");
+            var loadMore = document.getElementById("loadMore");
+            var more = document.getElementById("more");
+
+            if (moreImages.style.display == "none") {
+                moreImages.style.display = "inline";
+                loadMore.innerText = "Less";
+                more.style.display = "none";
+            }
+            else {
+                moreImages.style.display = "none";
+                loadMore.innerText = "More";
+                more.style.display = "inline";
+            }
+        }
+    </script> -->
+
+
+
+
+    <!-- Why US -->
+    <div class="page-blocks">
+        <div class="title" data-aos="fade-down" id="whyus">Why Us</div>
+        <div class="flex-block">
+
+            <div class="why-us-flex-item" data-aos="fade-up">
+                <div class="block-label">
+                    Our Projects
+                </div>
+                <div class="block-description">
+                    Award Winning Interior Designers in Bangalore with 12 years of experience & 3000+ projects. The
+                    KariGhars is the Best Interior Designers & Decorators in Bangalore. Contact Us! Living Room
+                    Interiors.
+                </div>
+            </div>
+
+            <div class="why-us-flex-item" data-aos="fade-up">
+                <div class="block-label">
+                    Our Designs
+                </div>
+                <div class="block-description">
+                    Award Winning Interior Designers in Bangalore with 12 years of experience & 3000+ projects. The
+                    KariGhars is the Best Interior Designers & Decorators in Bangalore. Contact Us! Living Room
+                    Interiors.
+                </div>
+            </div>
+
+            <div class="why-us-flex-item" data-aos="fade-up">
+                <div class="block-label">
+                    Our Servics
+                </div>
+                <div class="block-description">
+                    Award Winning Interior Designers in Bangalore with 12 years of experience & 3000+ projects. The
+                    KariGhars is the Best Interior Designers & Decorators in Bangalore. Contact Us! Living Room
+                    Interiors.
+                </div>
+            </div>
+
+            <div class="why-us-flex-item" data-aos="fade-up">
+                <div class="block-label">
+                    Finished Projects
+                </div>
+                <div class="block-number">
+                    1,000
+                </div>
+            </div>
+
+            <div class="why-us-flex-item" data-aos="fade-up">
+                <div class="block-label">
+                    Upcoming Projects
+                </div>
+                <div class="block-number">
+                    500
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Appointment  -->
+        <div class="page-blocks" id="appointment">
+            <div class="title" data-aos="fade-down">Appointment
+                <div class="flecx-block"></div>
+                <div class="appointment-flex-item" data-aos="fade-right">
+                    <div class="appointment-img">
+                        <div class="appointment-text" data-aos="fade-up">Make an Appointment Today
+                        </div>
+                    </div>
+                </div>
+
+                <div class="appointment-flex-item" data-aos="fade-left">
+                    <form class="appointment-form" data-aos="fade-up">
+                        <input type="text" placeholder="Name" /><br />
+                        <input type="text" placeholder="Mobile" /><br />
+                        <input type="text" placeholder="Email" /><br />
+                        <input type="text" placeholder="City" /><br />
+                        <textarea type="text" placeholder="Requirement"></textarea><br />
+                        <button class="appointment-btn">Make An Appointment</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- footer block -->
+        <div class="footer" id="footer">
+            <div class="location">
+
+                <div class="location">
+                    <div>Us Location <br>
+                        <div class="address">At Post Tondavali <br> Tal-Malvan <br> Dist-Sindhudurg</div>
+                    </div>
+                </div>
+
+                <div class="location">
+                    <div>Us Location <br>
+                        <div class="address">At Post Tondavali <br> Tal-Malvan <br> Dist-Sindhudurg</div>
+                    </div>
+                </div>
+
+                <div class="location">
+                    <div>Us Location <br>
+                        <div class="address">At Post Tondavali <br> Tal-Malvan <br> Dist-Sindhudurg</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="social-media-icons">
+                <i href="#" class="fa fa-facebook-square" data-aos="flip-left"></i>
+                <i href="#" class="fa fa-twitter-square" data-aos="flip-left"></i>
+                <i href="#" class="fa fa-instagram" data-aos="flip-left"></i>
+                <i href="#" class="fa fa-pinterest-square" data-aos="flip-left"></i>
+                <i href="#" class="fa fa-whatsapp" data-aos="flip-left"></i>
+            </div>
+
+        </div>
+        <div class="copyrights">
+            <i href="#" class="fa fa-copyright"></i>
+            2021 By Dipesh Pujare and Omkar Mestry
+        </div>
+
+
+</body>
+
+</html>
+
+<script>
+    AOS.init({
+        duration: 1400,
+    });
+</script>
